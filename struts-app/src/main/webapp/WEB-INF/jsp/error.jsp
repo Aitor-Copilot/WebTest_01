@@ -59,7 +59,7 @@
         </div>
         
         <div class="back-link">
-            <a href="<s:url action=''/>">← Back to Home</a>
+            <a href="index.action">← Back to Home</a>
         </div>
     </div>
 </body>

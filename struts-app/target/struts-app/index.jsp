@@ -9,14 +9,14 @@
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            margin: 20px auto;
+            padding: 1px;
             background-color: #f5f5f5;
         }
         .container {
             background-color: white;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 58px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1 {

@@ -53,7 +53,9 @@
         <p>This page demonstrates a simple Struts 2 action that displays a welcome message.</p>
         
         <div class="back-link">
-            <a href="<s:url action=''/>">← Back to Home</a>
+            <!--a href="<s:url action=''/>">← Back to Home</a-->
+            <a href="index.action">← Back to Home</a>
+
         </div>
     </div>
 </body>
