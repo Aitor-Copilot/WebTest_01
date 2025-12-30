@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!-- Set development mode for debugging -->
+    <constant name="struts.devMode" value="true" />
+    
+    <!-- Set default locale and encoding -->
+    <constant name="struts.locale" value="en_US" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    
+    <!-- Package configuration -->
+    <package name="default" namespace="/" extends="struts-default">
+        
+        <!-- Global Results -->
+        <global-results>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </global-results>
+        
+        <!-- Global Exception Mappings -->
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+        
+        <!-- Index Action (home page) -->
+        <action name="index" class="com.example.action.IndexAction">
+            <result name="success">/index.jsp</result>
+        </action>
+        
+        <!-- Hello Action -->
+        <action name="hello" class="com.example.action.HelloAction">
+            <result name="success">/WEB-INF/jsp/hello.jsp</result>
+        </action>
+        
+        <!-- Welcome Action -->
+        <action name="welcome" class="com.example.action.WelcomeAction">
+            <result name="success">/WEB-INF/jsp/welcome.jsp</result>
+        </action>
+        
+    </package>
+</struts>
+
