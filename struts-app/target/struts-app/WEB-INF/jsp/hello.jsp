@@ -43,6 +43,11 @@
             border-radius: 4px;
             font-size: 14px;
         }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
         input[type="submit"] {
             padding: 10px 20px;
             background-color: #4CAF50;
@@ -78,10 +83,11 @@
         
         <div class="form-container">
             <h3>Enter your name:</h3>
-            <s:form action="hello" method="post">
-                <s:textfield name="name" label="Name" placeholder="Enter your name"/>
-                <s:submit value="Submit"/>
-            </s:form>
+            <form action="hello.action" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" value=""/>
+                <input type="submit" value="Submit"/>
+            </form>
         </div>
         
         <div class="back-link">
