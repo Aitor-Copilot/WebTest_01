@@ -33,3 +33,4 @@ Get-ChildItem "$env:CATALINA_HOME\lib\servlet-api*.jar"
 The current `pom.xml` is configured for **Jakarta EE 6.0** (Tomcat 10+), which may not work with Struts 2.5.31.
 
 
+
